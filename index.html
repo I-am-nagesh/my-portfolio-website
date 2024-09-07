@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <!-- navbar -->
-<nav class="navbar">
-    <ul class="link-group">
-        <li class="link active"><a href="#">home</a></li>
-        <li class="link"><a href="#">projects</a></li>
-        <li class="link"><a href="#">about</a></li>
-        <li class="link"><a href="#">contact</a></li>
-        <li class="link"><a href="#">contact</a></li>
-    </ul>
-</nav>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi It's <span>Nagesh</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          optio fuga nisi fugit minus, corrupti repellendus! Asperiores commodi
+          eum laudantium.
+        </p>
+      </div>
+      <div class="home-img">
+        <img src="./assets/profile-pic.png" alt="" />
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+
+      <div class="projects-container">
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Dice Game</h4>
+            <p>
+              <span>Developed an Interactive Dice Game with React:</span>
+              <br />Built a dynamic game that manages state and user
+              interactions using Reacts component architecture.
+            </p>
+          </div>
+          <div class="button">
+            <a href="https://diceegamee.vercel.app/" class="btn">Open</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Weather App</h4>
+            <p>
+              <span>Developed a Weather App using React:</span> Built an
+              interactive weather app that fetches real-time temperature,
+              humidity, and wind speed for any city using third-party APIs.
+            </p>
+          </div>
+          <div class="button">
+            <a href="https://weathercondition.vercel.app/" class="btn">Open</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
